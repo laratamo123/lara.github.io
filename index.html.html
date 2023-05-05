@@ -359,28 +359,77 @@ img {
 /* ===== ACTIVITIES =====*/
 .activities__container {
   row-gap: 2rem;
+  text-align: center;
 }
 
-.activities__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+.activities__subtitle {
+  margin-bottom: var(--mb-2);
+}
+
+.activities__text {
+  margin-bottom: var(--mb-4);
+}
+
+.activities__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  overflow: hidden;
+  box-shadow: 0px 4px 25px blue;
 }
 
-.activities_img img {
-  transition: 1s;
+.activities__icon {
+  font-size: 2rem;
+  margin-right: var(--first-color);
+  font-style: italic;
+  font-size: larger;
 }
 
-.activities__img img:hover {
-  transform: scale(1.1);
+.activities__names {
+  display: flex;
+  align-items: center;
 }
 
+.activities__bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: honeydew;
+  background-size: 50%;
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+ 
+}
+
+
+.activities__Assessment2 {
+  width: 50;
+}
+
+.activitie__Login {
+  width: 85%;
+}
+
+.activitie__Login{
+  width: 70%;
+}
+
+.skills__img {
+  border-radius: .5rem;
+ 
+}
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
+ 
   border-radius: .5rem;
   border: 1.5px solid var(--second-color);
   outline: none;
@@ -652,33 +701,64 @@ img {
             </section>
 
             <!--===== ACTIVITIES =====-->
-           <p>Check out some of my recent project:</p>
-           <ul>
-            </li>
-            <section class="work section" id="activities">
-              <h2 class="section-title">Activities</h2>
+      
+           <section class="activities section" id="activities">
+            <h2 class="section-title">Activities</h2>
 
-              <div class="work__container bd-grid">
-                  <a href="" class="work__img">
-                      <img src="assets/img/work1.jpg" alt="">
-                  </a>
-                  <a href="" class="work__img">
-                      <img src="assets/img/work2.jpg" alt="">
-                  </a>
-                  <a href="" class="work__img">
-                      <img src="assets/img/work3.jpg" alt="">
-                  </a>
-                  <a href="" class="work__img">
-                      <img src="assets/img/work4.jpg" alt="">
-                  </a>
-                  <a href="" class="work__img">
-                      <img src="assets/img/work5.jpg" alt="">
-                  </a>
-                  <a href="" class="work__img">
-                      <img src="assets/img/work6.jpg" alt="">
-                  </a>
-              </div>
-          </section>
+            <div class="activities__container bd-grid">          
+                <div>
+                    <h2 class="activities__subtitle">Activities</h2>
+                    
+                    <div class="activities__data">
+                        <div class="activities__names">
+                           
+                            <span class="activities__name">Assessment 2</span>
+                        </div>
+                        <div class="sactivities__bar activities__html">
+                          
+                          
+                    </div>
+                    <div class="activities__data">
+                        <div class="activities__names">
+                            
+                            <span class="activities__name">Calculator</span>
+                        </div>
+                        <div class="activities__bar activities__css">
+                            
+                      
+                    </div>
+                    <div class="activities__data">
+                        <div class="activities__names">
+                            
+                            <span class="activities__name">Log in</span>
+                        </div>
+                        <div class="activities__bar activities__js">
+
+                        </div>
+                        <div class="activities__data">
+                            <div class="activities__names">
+                                
+                                <span class="activities__name">Personal.html</span>
+                            </div>
+                            <div class="activities__bar activities__css">
+
+                            </div>
+                            <div class="activities__data">
+                                <div class="activities__names">
+                                    
+                                    <span class="activities__name">Typography</span>
+                                </div>
+                                <div class="activities__bar activities__css">
+                                    
+                                
+                            
+                    
+            
+                          
+                    <img src="assets/img/work3.jpg" alt="" class="activities__img">
+                </div>
+            </div>
+        </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
